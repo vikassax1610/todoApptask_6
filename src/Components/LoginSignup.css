@@ -84,7 +84,7 @@ input, button, select {
 }
 
 .formButton:hover {
-  background-color: #0056b3;
+  background-color: #00ff3c;
 }
 
 /* To-Do List Container */
@@ -179,7 +179,7 @@ button {
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #00b327;
 }
 
 /* Drag-and-Drop Styles */
