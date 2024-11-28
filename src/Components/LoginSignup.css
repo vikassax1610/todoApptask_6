@@ -1,0 +1,222 @@
+/* General Reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+input, button, select {
+  font-family: inherit;
+  font-size: 16px;
+}
+
+/* Login and Signup Container */
+.loginContainer {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.toggleButtons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.toggleButtons button {
+  flex: 1;
+  padding: 10px;
+  background: #f0f0f0;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-right: 10px;
+  transition: background-color 0.3s;
+}
+
+.toggleButtons button:last-child {
+  margin-right: 0;
+}
+
+.toggleButtons button.active {
+  background: #00ff3c;
+  color: white;
+  font-weight: bold;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.formContainer h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #00ff3c;
+}
+
+.formInput {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.formButton {
+  padding: 10px;
+  background-color: #00ff3c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.formButton:hover {
+  background-color: #0056b3;
+}
+
+/* To-Do List Container */
+.todoContainer {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.todoContainer h2 {
+  text-align: center;
+  color: #00ff3c;
+  margin-bottom: 20px;
+}
+
+.todoList {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+
+.todoList h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.priorityButtons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  flex-direction: column;
+}
+
+.priorityButtonHigh,
+.priorityButtonMedium,
+.priorityButtonLow {
+  flex: 1;
+  padding: 15px;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  margin: 0 10px;
+  transition: transform 0.3s;
+}
+
+.priorityButtonHigh {
+  background-color: #dc3545;
+}
+
+.priorityButtonMedium {
+  background-color: #ffc107;
+}
+
+.priorityButtonLow {
+  background-color: #28a745;
+}
+
+.priorityButtonHigh:hover,
+.priorityButtonMedium:hover,
+.priorityButtonLow:hover {
+  transform: scale(1.05);
+}
+
+/* Task Form */
+input[type="text"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #00ff3c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Drag-and-Drop Styles */
+.droppable {
+  background-color: #e9ecef;
+  padding: 10px;
+  border: 1px dashed #ccc;
+  border-radius: 6px;
+}
+
+.draggable {
+  padding: 10px;
+  background-color: #f8f9fa;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  cursor: grab;
+}
+
+.draggable:hover {
+  background-color: #e2e6ea;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .loginContainer, .todoContainer {
+    width: 90%;
+  }
+
+  .priorityButtons {
+    flex-direction: column;
+  }
+
+  .priorityButtonHigh,
+  .priorityButtonMedium,
+  .priorityButtonLow {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+}
